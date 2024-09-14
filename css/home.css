@@ -32,6 +32,8 @@
     --padding-1: 1.2rem;
 
     --box-shadow: 0 2rem 3rem var(--color-light);
+    --color-background: #181a1e;
+    --color-white: #202528;
 }
 .dark-theme{
     --color-background: #181a1e;
@@ -97,6 +99,7 @@ header
     background-color: white;
     z-index: 100;
     padding: 32px 0px;
+    box-shadow: var(--shadow);
 }
 
 header .container
