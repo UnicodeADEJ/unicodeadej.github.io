@@ -1,0 +1,210 @@
+@media (max-width:450px){
+    header{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        position: relative;
+    }
+    header .container{
+        width: 90%;
+        justify-content: space-between;
+    }
+    #active{
+        display: none;
+    }
+    header .container nav{
+        transform: translateX(100%);
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        width: 200px;
+        justify-content: space-around;
+        height: 40vh;
+        box-shadow: 0px 10px 15px 8px rgba(0,0,0,0.050);
+        padding: 10px 0px;
+    }
+    header .container nav ul{
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+    header .container nav ul li{
+        width: 100%;
+        position: relative;
+    }
+    nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+        margin: 0px 0px 0px 10px;
+        background-color: #7169E5;
+        width: 50px;
+        height: 50px;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        flex-direction: column;
+        box-shadow: var(--shadow);
+        cursor: pointer;
+    }
+    #active:checked ~ nav{
+        transform: translateX(0%);
+        transition: .6s;
+    }
+    nav ul li a:hover ~ .submenu{
+        display: block;
+        padding: 4px;
+        box-shadow: var(--shadow);
+        display: block;
+        position: absolute;
+        width: max-content;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        top: 100%;
+        background-color: #fff;
+    }
+    main .container{
+        flex-direction: column;
+        width: 97%;
+        height: 100%;
+
+    }
+    main .container .texto{
+        align-items: center;
+        width: 90%;
+        align-items: center;
+    }
+    main .container .texto h2{
+        text-align: center;
+    }
+    .texto h3, .texto .tips{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .tips{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .texto .tips li
+    {
+        justify-content: center;
+        text-align: center;
+    }
+    .float{
+        margin: 0px 0px 20px 0px;
+    }
+    .float .container{
+        width: 90%;
+
+    }
+    .caracs .desc{
+        height: 60%;
+        overflow: hidden;
+    }
+    .servicos{
+        height: max-content;
+    }
+    .servicos .cabeca h3{
+        text-align: center;
+    }
+    .servicos .container{
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .servicos .container .card{
+        margin-bottom: 20px;
+    }
+    .square {
+        height: max-content;
+    }
+    .square .container{
+        width: 90%;
+        height: max-content;
+        flex-direction: column;
+    }
+    .duplo{
+        height: max-content;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .duplo .foto{
+        background-color: red;
+        display: none;
+    }
+    .duplo .foto div{
+        overflow: hidden;
+        width: 199px;
+        height: 199px;
+    }
+    .duplo .text{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .text .mini{
+        align-items: center;
+        justify-content: center;
+    }
+    .duplo .text h3
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .duplo .text p{
+        text-align: center;
+        width: 100%;
+    }
+    .duplo .text .quali{
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .quali .icone{
+        margin: 0;
+        margin-bottom: 10px;
+        height: 70px;
+    }
+
+    .duplo .text .quali:nth-child(2){
+        margin-bottom: 30px;
+        background-color: red;
+    }
+    .numbers{
+        margin: 30px;
+        display: flex;
+        height: max-content;
+        width: 50%;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .number{
+        width: 50%;
+        flex-direction: column;
+
+    }
+    footer{
+        height: max-content;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+}
