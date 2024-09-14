@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-1);
 }
 :root
 {
@@ -22,7 +23,8 @@
     --color-primary-variant:#111e88;
     --color-dark-variant:#677483;
     --color-background:#f6f6f9;
-
+    --font-1:'nasalization';
+    --font-2:'poppins';
     --card-border-radius:2rem;
     --border-radius-1:0.4rem;
     --border-radius-2:0.8rem;
@@ -112,8 +114,19 @@ header .container
 
 .logo
 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     font-size: 24px;
     font-weight: 700;
+}
+.logo img{
+    width: 40px;
+}
+.logo p{
+    margin-left: 10px;
+    font-family: 'nasalization';
 }
 header .container nav
 {
@@ -260,12 +273,14 @@ main .container .texto
 {
     color: #7169E5;
     font-size: 48px;
+    width: max-content;
 }
 .texto h3
 {
     font-size: 32px;
     margin-bottom: 30px;
     color: #fff;
+
 }
 .texto span
 {
@@ -312,7 +327,7 @@ main .foto{
 }
 
 main .foto img{
-    width: 100%;
+    width: 90%;
     
 }
 /*###############################Main#############################*/
@@ -484,7 +499,7 @@ main .foto img{
     color: #332D6A;
 }
 .duplo .text h3{
-    width: 50%;
+    width: 80%;
     margin-bottom: 20px;
     font-size: 24px;
     color: #332D6A;
